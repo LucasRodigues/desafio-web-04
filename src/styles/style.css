@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+header {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .conteudo {
+  width: 700px;
+  text-align: center;
+}
+
+header h2 {
+  font: 60px "Roboto", sans-serif;
+  color: #ea1d2c;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+header h3 {
+  font: 30px "Roboto", sans-serif;
+  color: #6e6e6e;
+}
+
+header .botao-feedback {
+  position: fixed;
+  right: -45px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  background: #ea1d2c;
+  font: 14px "Roboto", sans-serif;
+  color: #fff;
+  padding: 16px 22px;
+}
+
+header .botao-feedback:hover {
+  right: -25px;
+}
+
+header .icone-coca {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+header .icone-frigideira {
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+header .icone-compras {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 200px;
+  display: none;
+}
+
+header .icone-tomate {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header .icone-coca {
+    display: none;
+  }
+}
+
+@media (max-width: 825px) {
+  header .conteudo {
+    width: 500px;
+  }
+  header h2 {
+    font-size: 50px;
+  }
+  header h3 {
+    font-size: 20px;
+  }
+  header .icone-frigideira {
+    display: none;
+  }
+  header .icone-compras {
+    display: block;
+  }
+  header .icone-tomate {
+    display: block;
+  }
+}
+
+@media (max-width: 625px) {
+  header .conteudo {
+    width: 360px;
+  }
+  header .botao-feedback {
+    display: none;
+  }
+  header .icone-compras {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    height: 200px;
+  }
+  header .conteudo {
+    width: 300px;
+  }
+  header h2 {
+    font-size: 25px;
+  }
+  header h3 {
+    font-size: 10px;
+  }
+  header .icone-tomate {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
